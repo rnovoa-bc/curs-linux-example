@@ -14,7 +14,7 @@ gpgcheck = 1
 dnf install MariaDB-server MariaDB-client -y  
 
 
-## Crrem la BBDD i posem unes quentes dades
+## Creem la BBDD i posem unes quantes dades
 mariadb < database/db-install.sql  
   
 # Instal·lar NGINX
