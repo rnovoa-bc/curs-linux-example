@@ -50,8 +50,7 @@ set enforce 0
 nano /etc/selinux/config -> permissive  
  
 # Instal·lar nodejs LTS
-  
-dnf groupinstall 'Development Tools' -y  
+
 curl -fsSL https://rpm.nodesource.com/setup_20.x | bash -  
   
 # Instal·lar pm2
