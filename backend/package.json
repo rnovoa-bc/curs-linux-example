@@ -1,0 +1,20 @@
+{
+  "name": "jokes-api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "API for test-joskes-app",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "nodemon index.mjs"
+  },
+  "author": "Ramon Novoa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mariadb": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
