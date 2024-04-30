@@ -13,7 +13,7 @@ const pool = mariadb.createPool( {
   connectionLimit: 5
 });
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   pool.getConnection()
     .then( conn => {
       conn.query("select * from jokes")
@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/total", (req, res) => {
+app.get("/api/total", (req, res) => {
   pool.getConnection()
     .then( conn => {
       conn.query("select count(*) as total from jokes")
@@ -33,7 +33,7 @@ app.get("/total", (req, res) => {
   });
 });
 
-app.get("/:id", (req, res) => {
+app.get("/api/:id", (req, res) => {
   pool.getConnection()
     .then( conn => {
       conn.query(`select * from jokes where id=${req.params.id}`)
